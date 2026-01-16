@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "dgSpecHash": "cRzVYoYxOUU=",
+  "success": true,
+  "projectFilePath": "/workspaces/backend_case_study/ReservationSystem.API/ReservationSystem.API.csproj",
+  "expectedPackageFiles": [
+    "/home/codespace/.nuget/packages/dnsclient/1.6.1/dnsclient.1.6.1.nupkg.sha512",
+    "/home/codespace/.nuget/packages/hangfire.aspnetcore/1.8.22/hangfire.aspnetcore.1.8.22.nupkg.sha512",
+    "/home/codespace/.nuget/packages/hangfire.core/1.8.22/hangfire.core.1.8.22.nupkg.sha512",
+    "/home/codespace/.nuget/packages/hangfire.mongo/1.12.2/hangfire.mongo.1.12.2.nupkg.sha512",
+    "/home/codespace/.nuget/packages/hangfire.netcore/1.8.22/hangfire.netcore.1.8.22.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.aspnetcore.openapi/10.0.0/microsoft.aspnetcore.openapi.10.0.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.extensions.apidescription.server/10.0.0/microsoft.extensions.apidescription.server.10.0.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.openapi/2.3.0/microsoft.openapi.2.3.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/mongodb.bson/3.6.0/mongodb.bson.3.6.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/mongodb.driver/3.6.0/mongodb.driver.3.6.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/newtonsoft.json/11.0.1/newtonsoft.json.11.0.1.nupkg.sha512",
+    "/home/codespace/.nuget/packages/sharpcompress/0.30.1/sharpcompress.0.30.1.nupkg.sha512",
+    "/home/codespace/.nuget/packages/snappier/1.0.0/snappier.1.0.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/swashbuckle.aspnetcore/10.1.0/swashbuckle.aspnetcore.10.1.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/swashbuckle.aspnetcore.swagger/10.1.0/swashbuckle.aspnetcore.swagger.10.1.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/swashbuckle.aspnetcore.swaggergen/10.1.0/swashbuckle.aspnetcore.swaggergen.10.1.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/swashbuckle.aspnetcore.swaggerui/10.1.0/swashbuckle.aspnetcore.swaggerui.10.1.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/zstdsharp.port/0.7.3/zstdsharp.port.0.7.3.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "'Newtonsoft.Json' 11.0.1 paketinde önem derecesi yüksek olan bilinen bir https://github.com/advisories/GHSA-5crp-9r3c-p9vr güvenlik açığı var",
+      "projectPath": "/workspaces/backend_case_study/ReservationSystem.API/ReservationSystem.API.csproj",
+      "warningLevel": 1,
+      "filePath": "/workspaces/backend_case_study/ReservationSystem.API/ReservationSystem.API.csproj",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}

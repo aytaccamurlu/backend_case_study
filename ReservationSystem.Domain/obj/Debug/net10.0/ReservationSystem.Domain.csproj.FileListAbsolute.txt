@@ -1,0 +1,13 @@
+/workspaces/backend_case_study/ReservationSystem.Domain/bin/Debug/net10.0/ReservationSystem.Domain.deps.json
+/workspaces/backend_case_study/ReservationSystem.Domain/bin/Debug/net10.0/ReservationSystem.Domain.dll
+/workspaces/backend_case_study/ReservationSystem.Domain/bin/Debug/net10.0/ReservationSystem.Domain.pdb
+/workspaces/backend_case_study/ReservationSystem.Domain/obj/Debug/net10.0/ReservationSystem.Domain.csproj.AssemblyReference.cache
+/workspaces/backend_case_study/ReservationSystem.Domain/obj/Debug/net10.0/ReservationSystem.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/backend_case_study/ReservationSystem.Domain/obj/Debug/net10.0/ReservationSystem.Domain.AssemblyInfoInputs.cache
+/workspaces/backend_case_study/ReservationSystem.Domain/obj/Debug/net10.0/ReservationSystem.Domain.AssemblyInfo.cs
+/workspaces/backend_case_study/ReservationSystem.Domain/obj/Debug/net10.0/ReservationSystem.Domain.csproj.CoreCompileInputs.cache
+/workspaces/backend_case_study/ReservationSystem.Domain/obj/Debug/net10.0/ReservationSystem.Domain.sourcelink.json
+/workspaces/backend_case_study/ReservationSystem.Domain/obj/Debug/net10.0/ReservationSystem.Domain.dll
+/workspaces/backend_case_study/ReservationSystem.Domain/obj/Debug/net10.0/refint/ReservationSystem.Domain.dll
+/workspaces/backend_case_study/ReservationSystem.Domain/obj/Debug/net10.0/ReservationSystem.Domain.pdb
+/workspaces/backend_case_study/ReservationSystem.Domain/obj/Debug/net10.0/ref/ReservationSystem.Domain.dll
