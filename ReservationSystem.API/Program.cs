@@ -23,34 +23,35 @@ builder.Services.AddHangfire(config => config
             MigrationStrategy = new MigrateMongoMigrationStrategy(),
             BackupStrategy = new CollectionMongoBackupStrategy()
         },
-        Prefix = "hangfire",
-        
+        CheckConnection = true,
+        Prefix = "hangfire"
     })
 );
 builder.Services.AddHangfireServer();
 
 // 3. Servis Kayıtları
-builder.Services.AddControllers(); // Önemli: Controller'lar için
+builder.Services.AddControllers(); 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(); // API Testleri için Swagger ekleyelim
+builder.Services.AddSwaggerGen(); // Swashbuckle kullanımı
 builder.Services.AddScoped<ReservationService>();
 
 var app = builder.Build();
 
-// 4. Middleware Pipeline
+// 4. Middleware Pipeline - Render ve Her Ortamda Swagger Açık
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Reservation API V1");
-    c.RoutePrefix = string.Empty; // Siteye girince direkt Swagger açılsın
+    c.RoutePrefix = string.Empty; // Ana dizinde Swagger başlar
 });
 
+// Render/Docker ortamında HTTPS bazen sorun çıkarabilir, 
+// eğer linke ulaşamazsan bu satırı yorum satırı yapabilirsin.
 app.UseHttpsRedirection();
-app.UseAuthorization();
 
-// Hangfire Dashboard (Burada olmalı)
+app.UseAuthorization();
 app.UseHangfireDashboard("/hangfire");
 
-app.MapControllers(); // Controller rotalarını eşleştir
+app.MapControllers();
 
 app.Run();
