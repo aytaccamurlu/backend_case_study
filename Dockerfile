@@ -17,7 +17,7 @@ COPY . .
 
 # Projeyi derle ve yayınla
 WORKDIR "/src/ReservationSystem.API"
-RUN dotnet publish "ReservationSystem.API.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "ReservationSystem.API.csproj" -c Release -o /app/publish /p:UseAppHost=false /p:ErrorOnDuplicatePublishOutputFiles=false
 
 # 2. Çalıştırma Aşaması (Runtime imajı kullanılır)
 FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS final
