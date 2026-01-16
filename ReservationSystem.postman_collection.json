@@ -1,0 +1,73 @@
+{
+	"info": {
+		"name": "Reservation System API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1. Create Event",
+			"request": {
+				"method": "POST",
+				"header": [
+					{ "key": "Content-Type", "value": "application/json" }
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Tarkan Konseri\",\n    \"capacity\": 10,\n    \"startDate\": \"2026-05-01T20:00:00Z\",\n    \"endDate\": \"2026-05-01T23:00:00Z\",\n    \"isActive\": true\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/Events",
+					"host": ["{{baseUrl}}"],
+					"path": ["api", "Events"]
+				}
+			}
+		},
+		{
+			"name": "2. Hold Reservation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{ "key": "Content-Type", "value": "application/json" }
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"eventId\": \"BURAYA_EVENT_ID_GELECEK\",\n    \"userId\": \"user_123\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/Reservations/hold",
+					"host": ["{{baseUrl}}"],
+					"path": ["api", "Reservations", "hold"]
+				}
+			}
+		},
+		{
+			"name": "3. Confirm Reservation",
+			"request": {
+				"method": "POST",
+				"url": {
+					"raw": "{{baseUrl}}/api/Reservations/confirm/BURAYA_RESERVATION_ID_GELECEK",
+					"host": ["{{baseUrl}}"],
+					"path": ["api", "Reservations", "confirm", "BURAYA_RESERVATION_ID_GELECEK"]
+				}
+			}
+		},
+		{
+			"name": "4. Get Event Details",
+			"request": {
+				"method": "GET",
+				"url": {
+					"raw": "{{baseUrl}}/api/Events/BURAYA_EVENT_ID_GELECEK",
+					"host": ["{{baseUrl}}"],
+					"path": ["api", "Events", "BURAYA_EVENT_ID_GELECEK"]
+				}
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://upgraded-trout-j9j67xwqx6jh4qx-5187.app.github.dev",
+			"type": "string"
+		}
+	]
+}
