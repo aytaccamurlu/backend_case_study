@@ -38,11 +38,12 @@ builder.Services.AddScoped<ReservationService>();
 var app = builder.Build();
 
 // 4. Middleware Pipeline
-if (app.Environment.IsDevelopment())
+app.UseSwagger();
+app.UseSwaggerUI(c =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Reservation API V1");
+    c.RoutePrefix = string.Empty; // Siteye girince direkt Swagger açılsın
+});
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
